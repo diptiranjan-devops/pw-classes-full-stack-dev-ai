@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web project</title>
+    </head>
+    <body>
+        <!-- Inline event handler -->
+        <!-- <button class="btn" onclick="clicked()">Click</button>    -->
+
+        <h2>Total clicks: <span id="count"></span></h2>
+
+        <button id="btn">Click</button>
+        <button id="reset">Reset count</button>
+
+        <br>
+
+        <!-- Events keyup and keydown -->
+
+        <input type="text" id="keyboardInput" placeholder="Press any key">
+
+        <h2 id="result"></h2>
+
+        <br>
+
+        <!-- Event change -->
+
+        <select id="country">
+            <option value="">Select country</option>
+            <option value="IND">India</option>
+            <option value="UK">United Kingdom</option>
+            <option value="USA">United states of America</option>
+            <option value="CAN">Canada</option>
+        </select>
+
+        <h2 id="currentCountry"></h2>
+
+        <!-- Event submit -->
+
+        <form id="form">
+            <input type="email" id="email" placeholder="Enter email">
+            <button type="submit">Subscribe</button>
+        </form>
+
+        <p id="successMsg" style="display: none;">Email submitted successfully</p>
+
+        <h2>Password verification</h2>
+        <input type="password" id="password" placeholder="Enter Password">
+        <br>
+        <input type="password" id="confirmPassword" placeholder="Confirm Password">
+        <br>
+        <input type="checkbox" id="showPassword">
+        <label for="showPassword">Show password</label>
+        <br>
+        <h3 id="message"></h3>
+
+        <!-- Event bubbling -->
+         <div id="grandParent">
+            <div id="parent">
+                <button id="child">
+                    Click
+                </button>
+            </div>
+         </div>
+
+        <script src="learnJS.js"></script> 
+
+    </body>
+</html>

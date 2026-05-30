@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web project</title>
+    </head>
+    <body>
+        <script>
+            // Callback Function: A function which is passed as a parameter to another function is called callback function.
+            // function greet(fn){         // Higher order function
+            //     console.log(`Hi ${fn()}`)
+            // }
+
+            const greet = (fn) => {
+                console.log(`Hi ${fn()}`)
+            }
+
+            // function getCustomerName() { // Callback function
+            //     return "Navneet";
+            // }
+
+            const getCustomerName = () => "Navneet";
+
+            greet(getCustomerName);
+
+            // higher order function: A function that receives another function as a argument is called Higher order function.
+
+            let name = "Navneet";
+            let str = "I love JavaScript";
+            console.log(str.replace("JavaScript", ""));
+
+            const arr = [1,2,3];
+            const alp = ["a", "b", "c"]
+
+            arr.push(4); // Add an item at last of an array
+
+
+            console.log(arr.length);
+            console.log(alp.join("|"))
+            arr.pop(); // Remove an item from last of an array
+            console.log(arr.toString())
+
+            arr.unshift(0); // Add an item at start of an array
+
+            arr.shift(); // Remove an item from start of an array
+
+            // delete arr[1];
+
+            console.log(arr.concat(alp));
+
+            console.log(arr.concat(alp).slice(1, -2));
+
+            let x = arr.concat(alp);
+
+            console.log(x.splice(3, 0, "A", "B", "C")); // start, delete count, items to be added
+            console.log(x);
+
+            x.forEach(function(item) {
+                console.log(item);
+            })
+
+            // let arr2 = []
+
+            // for(let i = 0; i < arr.length; i++){
+            //     arr2[i] = arr[i] * arr[i] ;
+            // }
+
+            let square = arr.map(function(item){ // Returns a new array with the logic you want to apply on each item of an array.
+                return item *= item;
+            })
+
+            console.log(arr);
+            console.log(square);
+            console.log(arr.some(function(x){ // some is used to check if any one item of array satisfies a condition.
+                return x > 2
+            }));
+
+            console.log(arr.filter((item) => item % 2 !== 0)) // It returns a new array with items that stisfy filter condition
+
+            const nums = [100, 55, 60, 77, 23];
+
+            console.log(nums.filter((item) => item % 10 === 0));
+
+            console.log(nums.find((item) => item === 55));
+
+            console.log(nums.reverse());
+
+            let nestArr = [1, [1,2], [5]];
+
+            console.log(nestArr.flat());
+
+            // Sorting changes the original array.
+            console.log(nums.sort((a,b) => a - b))
+            console.log(nums.sort((a,b) => b - a))
+
+            console.log(nums.findIndex((i) => i === 55));
+
+            // console.log(nums.fill(100));
+
+
+            let countries = ["India", "USA", "Canada", "Germany", "Australia", "Fiji"];
+
+            let result = countries.filter( c => c.toLocaleLowerCase().includes('a'));
+
+            console.log(result);
+
+            // console.log(countries.sort());
+
+            // Destructuring of an array
+
+            // let In = countries[0];
+            // let Us = countries[1];
+            // let Ca = countries[2];
+            // let Gr = countries[3];
+            // let Au = countries[4];
+            // let Fi = countries[5];
+
+            let [In, Us, Ca, Gr, Au, Fi] = countries;
+
+            console.log(...countries);
+
+            let countries2 = ["Japan", "China", "France"];
+
+            countries = [...countries, ...countries2] // Spread operator (...)
+            
+
+            console.log(countries);
+
+            let obj = {
+                name: "Navneet",
+                subject: "JS"
+            }
+
+            let {n = name, subject} = obj
+
+            console.log(`My name is  ${n} and I teach ${subject}`)
+
+
+
+
+
+
+
+            // x.forEach((item) => console.log(item))
+
+            
+            
+
+
+
+        </script>
+    </body>
+</html>

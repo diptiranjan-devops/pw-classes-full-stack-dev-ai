@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web project</title>
+    </head>
+    <body>
+        <script>
+            let day = "Tue"
+
+            // if(false) {
+            //     console.log("hello")
+            // } else {
+            //     console.log("hi")
+            // }
+
+            2 % 2 === 0 ? console.log("hello") : console.log("hi");
+
+            let i = 0;
+
+            // while(i <= 5){
+            //     console.log(i);
+            //     i++;
+            // }
+
+            // Homework do while
+
+            // for in loop --> Arrays(Indexes) Objects(key)
+            let obj = {
+                name: "Nav",
+                id: "234",
+                age: "10"
+            }
+
+            let arr = [1,2,3]
+
+            for(let key  in obj){
+                console.log(obj[key])
+            }
+
+            // for of loop --> Arrays(Value)
+
+            for (let item of arr) {
+                console.log(item);
+            }
+
+
+            // function greeting(name = "there") { // parameter
+            //     return `Hello ${name}`;
+            // }
+
+
+            // var greeting = function(name = "there") {
+            //     return `Hello ${name}`;
+            // }
+
+            // let greet = greeting("chirag"); // argument
+
+            // console.log(greet)
+
+            // IIFE -> immediately invoked functional expression
+
+            (function greeting(name = "there") {
+                console.log(`Hello ${name}`);
+            })();
+
+        </script>
+    </body>
+</html>

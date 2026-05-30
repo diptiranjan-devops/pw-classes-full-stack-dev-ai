@@ -1,0 +1,69 @@
+/* External CSS */
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBJS8kT62cQtNH-ZoBxeeF0iX44LPe3-YrtA&s");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; */
+    /* font-size: 32px; */
+}
+
+p {
+    font-family: Arial, sans-serif;
+    /* 16px = 1 rem */
+    font-size: 1rem; 
+    font-style: italic;
+    text-align: right;
+    line-height: 1.7;
+    letter-spacing: 2px;
+    word-spacing: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+ol {
+    color: blue;
+}
+h6 {
+    color: green;
+}
+h1 {
+    color: rgb(0, 0, 255);
+}
+.italic {
+    font-style: italic;
+}
+.type-red {
+    color: rgba(137, 21, 21, 0.3);
+}
+.type-blue {
+    color: blue;
+}
+.italic, h6 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/* span a {.  Descendent Selector
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+} */
+/* Child Selector */
+span > a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+}
+/* Adjacent Selector */
+.type-blue + ul {
+    color: rgb(137, 21, 21);
+}
+/* General sibling */
+h6 ~ a {
+    background-color: yellow;
+}
+
+#listHere {
+    color:hsl(00, 100%, 50%);
+}
+
