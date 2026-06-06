@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Dashboard Reporting</title>
+    <link rel="stylesheet" href="/Stylesheets/static.css">
+    <link rel="stylesheet" href="/Stylesheets/analytics.css">
+    <link rel="stylesheet" href="/Stylesheets/reports.css">
+    <script async src="/Script-files/analytics.js"></script>
+    <script async src="/Script-files/static.js"></script>
+    <script async src="/Script-files/report.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar" id="sidebar">
+        <div class="logo">Dashboard</div>
+        <ul class="nav">
+            <li><a href="static.html">Home</a></li>
+            <li><a href="analytics.html">Analytics</a></li>
+            <li><a href="article.html">Article</a></li>
+            <li><a href="users.html">User</a></li>
+            <li><a href="reports.html">Report</a></li>
+            <li><a href="settings.html">Settings</a></li>
+        </ul>
+       </aside>
+       <main class="main">
+        <div id="reports-page">
+
+    <div class="page-header">
+        <h1>Reports Dashboard</h1>
+    </div>
+    <!-- Filters -->
+    <div class="filter-row">
+        <select>
+            <option>This Month</option>
+            <option>Last Month</option>
+            <option>Last 6 Months</option>
+        </select>
+
+        <select>
+            <option>All Categories</option>
+            <option>Politics</option>
+            <option>Sports</option>
+            <option>Technology</option>
+        </select>
+
+        <select>
+            <option>All Reports</option>
+            <option>Published</option>
+            <option>Draft</option>
+        </select>
+
+    </div>
+    <!-- KPI Cards -->
+    <div class="report-cards">
+
+        <div class="report-card">
+            <h3>Total Reports</h3>
+            <h2>230</h2>
+            <span class="growth">+25%</span>
+        </div>
+        <div class="report-card">
+            <h3>Published Reports</h3>
+            <h2>185</h2>
+            <span class="growth">+12%</span>
+        </div>
+        <div class="report-card">
+            <h3>Total Views</h3>
+            <h2>25,690</h2>
+            <span class="growth">+18%</span>
+        </div>
+        <div class="report-card">
+            <h3>Engagement</h3>
+            <h2>9.86%</h2>
+            <span class="growth">+8%</span>
+        </div>
+    </div>
+    <!-- Charts -->
+    <div class="report-charts">
+        <div class="chart-box">
+            <h3>Views By Category</h3>
+            <canvas id="categoryChart"></canvas>
+        </div>
+        <div class="chart-box">
+            <h3>Monthly Performance</h3>
+            <canvas id="monthlyChart"></canvas>
+        </div>
+    </div>
+    <!-- Reports Table -->
+    <div class="table-container">
+        <h3>Recent Reports</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Report Name</th>
+                    <th>Category</th>
+                    <th>Views</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>R001</td>
+                    <td>Election Coverage</td>
+                    <td>Politics</td>
+                    <td>4,520</td>
+                    <td class="success">Published</td>
+                </tr>
+                <tr>
+                    <td>R002</td>
+                    <td>IPL Final Analysis</td>
+                    <td>Sports</td>
+                    <td>3,280</td>
+                    <td class="success">Published</td>
+                </tr>
+                <tr>
+                    <td>R003</td>
+                    <td>AI Industry Report</td>
+                    <td>Technology</td>
+                    <td>1,920</td>
+                    <td class="success">Published</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</main>
+</body>
+</html>

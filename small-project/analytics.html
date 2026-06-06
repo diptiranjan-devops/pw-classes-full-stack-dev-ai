@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Project Analytics</title>
+    <link rel="stylesheet" href="/Stylesheets/static.css">
+    <link rel="stylesheet" href="/Stylesheets/analytics.css">
+    <script async src="/Script-files/analytics.js"></script>
+    <script async src="/Script-files/static.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar" id="sidebar">
+        <div class="logo">Dashboard</div>
+        <ul class="nav">
+            <li><a href="static.html">Home</a></li>
+            <li><a href="analytics.html">Analytics</a></li>
+            <li><a href="article.html">Article</a></li>
+            <li><a href="users.html">User</a></li>
+            <li><a href="reports.html">Report</a></li>
+            <li><a href="settings.html">Settings</a></li>
+        </ul>
+       </aside>
+       <main class="main">
+        <div id="analytics-page" class="page">
+
+        <div class="page-header">
+        <h1>Analytics Dashboard</h1>
+
+        <div class="header-actions">
+            <input type="text" placeholder="Search...">
+            <button>🔔</button>
+            <img src="#" alt="">
+        </div>
+        </div>
+
+        <!-- KPI Cards -->
+
+        <div class="analytics-cards">
+
+        <div class="analytics-card">
+            <h3>Total Users</h3>
+            <h2>89,935</h2>
+            <span class="positive">+10.1%</span>
+        </div>
+
+        <div class="analytics-card">
+            <h3>Total Products</h3>
+            <h2>23,283</h2>
+            <span class="positive">+4.2%</span>
+        </div>
+
+        <div class="analytics-card">
+            <h3>Total Orders</h3>
+            <h2>46,827</h2>
+            <span class="negative">-0.9%</span>
+        </div>
+
+        <div class="analytics-card">
+            <h3>Revenue</h3>
+            <h2>$124,854</h2>
+            <span class="positive">+15%</span>
+        </div>
+
+        </div>
+
+        <!-- Charts -->
+
+        <div class="chart-grid">
+
+        <div class="chart-card">
+            <h3>Orders Analytics</h3>
+            <canvas id="ordersChart"></canvas>
+        </div>
+
+        <div class="chart-card">
+            <h3>Earnings</h3>
+            <canvas id="earningChart"></canvas>
+        </div>
+
+        </div>
+
+     <!-- Orders Table -->
+
+        <div class="table-container">
+
+        <h3>Recent Orders</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Customer</th>
+                    <th>Location</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>#12594</td>
+                    <td>Soumya Das</td>
+                    <td>Kolkata</td>
+                    <td>$847.69</td>
+                    <td class="success">Completed</td>
+                </tr>
+
+                <tr>
+                    <td>#12595</td>
+                    <td>Muktikanta Mandal</td>
+                    <td>Odisha</td>
+                    <td>$420.00</td>
+                    <td class="pending">Pending</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+       </main>
+    </div>
+</body>
+</html>

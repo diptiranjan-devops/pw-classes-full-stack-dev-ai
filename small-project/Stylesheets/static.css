@@ -1,0 +1,183 @@
+.nav a{
+    color:rgb(22, 2, 2);
+    text-decoration:none;
+    display:block;
+    width:100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: rgb(117, 131, 184);
+    color: black;
+    transition: .3s;
+}
+.container{
+    display: flex;
+    min-height: 100vh;
+}
+
+/* sidebar */
+
+.sidebar{
+    width: 250px;
+    background: white;
+    color: #020617;
+    padding: 20px;
+}
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.nav{
+    list-style: none;
+}
+
+.nav li{
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.nav li:hover, .nav .action{
+    background: rebeccapurple;
+
+}
+
+/* main */
+
+.main{
+    flex: 1;
+    padding: 25px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.header h1{
+    font-size: 30px;
+}
+
+.toggle-btn{
+    border: none;
+    background: white;
+    color: #020617;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* cards */
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.card{
+    background: wheat;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba (0,0,0,.08);
+}
+
+.card h3{
+    font-size: 15px;
+    opacity: .8;
+
+}
+
+.card .value{
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Table */
+
+.table-container{
+    background: #eff0f3;
+    border-radius: 12px;
+    padding: 20px;
+    overflow-x: auto;
+}
+
+.table-container h2{
+    margin-bottom: 15px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td{
+    text-align: left;
+    padding: 15px;
+    border-bottom: 1px solid var(red);
+}
+
+.success{
+    color: rebeccapurple;
+    font-weight: bold;
+}
+
+.pending{
+    color: rgb(241, 109, 1);
+    font-weight: bold;
+}
+
+.failed{
+    color: red;
+    font-weight: bold;
+}
+
+/* Mobile */
+
+.menu-btn{
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #020617;
+}
+
+@media (max-width:700px){
+    .sidebar{
+        position: fixed;
+        left: -200px;
+        top: 0;
+        height: 100%;
+        z-index: 500;
+        transition: .3s;
+    }
+
+    .sidebar .show{
+        left: 0;
+    }
+    .menu-btn{
+        display: block;
+    }
+    .header{
+        gap: 10px;
+    }
+    .header-left{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+}

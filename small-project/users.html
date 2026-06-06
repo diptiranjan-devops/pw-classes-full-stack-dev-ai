@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static User data</title>
+    <link rel="stylesheet" href="/Stylesheets/static.css">
+    <link rel="stylesheet" href="/Stylesheets/analytics.css">
+    <script async src="/Script-files/analytics.js"></script>
+    <script async src="/Script-files/static.js"></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar" id="sidebar">
+        <div class="logo">Dashboard</div>
+        <ul class="nav">
+            <li><a href="static.html">Home</a></li>
+            <li><a href="analytics.html">Analytics</a></li>
+            <li><a href="article.html">Article</a></li>
+            <li><a href="users.html">User</a></li>
+            <li><a href="reports.html">Report</a></li>
+            <li><a href="settings.html">Settings</a></li>
+        </ul>
+       </aside>
+       <main class="main">
+        <div id="users-page">
+
+    <div class="page-header">
+        <h1>User Management</h1>
+
+        <div class="header-actions">
+            <input type="text" id="searchUser" placeholder="Search User...">
+            <button id="addUserBtn">+ Add User</button>
+        </div>
+    </div>
+
+    <!-- User Stats -->
+
+    <div class="analytics-cards">
+
+        <div class="analytics-card">
+            <h3>Total Users</h3>
+            <h2>1,250</h2>
+        </div>
+
+        <div class="analytics-card">
+            <h3>Active Users</h3>
+            <h2>980</h2>
+        </div>
+
+        <div class="analytics-card">
+            <h3>Blocked Users</h3>
+            <h2>25</h2>
+        </div>
+
+        <div class="analytics-card">
+            <h3>New Users</h3>
+            <h2>65</h2>
+        </div>
+
+    </div>
+
+    <!-- User Table -->
+
+    <div class="table-container">
+
+        <h3>User List</h3>
+
+        <table id="userTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>1</td>
+                    <td>Rakesh Sen</td>
+                    <td>rakesh@gmail.com</td>
+                    <td>Admin</td>
+                    <td><span class="active-user">Active</span></td>
+                    <td>
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Sambit Roy</td>
+                    <td>sambit@gmail.com</td>
+                    <td>Editor</td>
+                    <td><span class="active-user">Active</span></td>
+                    <td>
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Ramesh Jain</td>
+                    <td>ramesh@gmail.com</td>
+                    <td>User</td>
+                    <td><span class="inactive-user">Inactive</span></td>
+                    <td>
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </div>
+</main>
+</div>
+
+</body>
+</html>
