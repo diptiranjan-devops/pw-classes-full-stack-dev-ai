@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Small Project</title>
+    <link rel="stylesheet" href="/Stylesheets/static.css">
+    <link rel="stylesheet" href="/Stylesheets/analytics.css">
+    <script async src="/Script-files/analytics.js"></script>
+    <script async src="/Script-files/static.js"></script>
+</head>
+<body>
+    <div class="container">
+       <aside class="sidebar" id="sidebar">
+        <div class="logo">Dashboard</div>
+        <ul class="nav">
+            <li><a href="static.html">Home</a></li>
+            <li><a href="analytics.html">Analytics</a></li>
+            <li><a href="article.html">Article</a></li>
+            <li><a href="users.html">User</a></li>
+            <li><a href="reports.html">Report</a></li>
+            <li><a href="settings.html">Settings</a></li>
+        </ul>
+       </aside>
+       <main class="main">
+        <div class="header">
+            <div class="header-left">
+                <button class="menu-btn" id="menu-btn">☰</button>
+                <h1>Dashboard Overview</h1>
+            </div>
+            <button class="toggle-btn" id="themeBtn">
+                🌙 Dark Mode
+            </button>
+        </div>
+        <section class="cards">
+            <div class="card">
+                <h3>Total User</h3>
+                <div class="value" id="users">0</div>
+            </div>
+            <div class="card">
+                <h3>Revenue</h3>
+                <div class="value" id="revenue">$0</div>
+            </div>
+            <div class="card">
+                <h3>Orders</h3>
+                <div class="value" id="orders">0</div>
+            </div>
+            <div class="card">
+                <h3>Growth</h3>
+                <div class="value" id="growth">0%</div>
+            </div>
+        </section>
+        <section class="table-container">
+            <h3>Recent Activites</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>User</th>
+                        <th>Action</th>
+                        <th>Status</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rakesh San</td>
+                        <td>Buy Product</td>
+                         <td class="success">Purchase</td>
+                         <td>31st May 2026</td>
+                    </tr>
+                    <tr>
+                        <td>Sambit Roy</td>  
+                        <td>Created Account</td>
+                        <td class="pending">Pending</td>
+                        <td>11 Jun 2026</td>  
+                    </tr>
+                    <tr>
+                        <td>Sambhu Dutt Mishra</td>  
+                        <td>Payment Failed</td>
+                        <td class="failed">Failed</td>
+                        <td>20 Jun 2026</td>  
+                    </tr>
+                    <tr>
+                        <td>Ramesh Jain</td>  
+                        <td>Submitted Report</td>
+                        <td class="success">Completed</td>
+                        <td>10th July 2026</td>  
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+       </main>
+    </div>
+</body>
+</html>
